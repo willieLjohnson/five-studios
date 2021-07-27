@@ -138,6 +138,10 @@ h2 {
   background-size: 10px 10px;
 }
 
+.middle h2 {
+  font-size: 20px;
+}
+
 .right {
   grid-area: right;
 }
@@ -201,7 +205,7 @@ h2 {
 .product-card {
   background-color: var(--product-background);
   flex: 1 16%;
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
   margin: 25px;
   border-style: solid;
   border-color: var(--blue-2);
@@ -210,11 +214,16 @@ h2 {
 }
 
 .product-image img {
-  max-width: 100%;
+  max-block-size: 300px;
+  border-radius: 10px;
 }
 
 .product-info {
   margin-top: auto;
+}
+
+.product-info h6 {
+  color: var(--yellow);
 }
 
 .products .product-card:first-child,
@@ -226,6 +235,20 @@ h2 {
 .about {
   background-color: var(--form-background);
   padding: 20px;
+}
+
+.about img {
+  border-radius: 100%;
+}
+
+.fa {
+  padding: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--yellow);
+  color: var(--blue-5);
+  border-radius: 10%;
 }
 /* Contact form */
 
@@ -307,11 +330,14 @@ button#submit-button:hover {
   border-style: solid;
   border-color: var(--blue-2);
   border-radius: 5px;
-  width: 50%;
+  min-block-size: 250px;
+  max-block-size: 700px;
   padding: 10px;
   margin: auto;
+  border-radius: 5px;
 }
 
 .blog-image img {
-  max-width: 100%;
+  max-block-size: 500px;
+  border-radius: 10px;
 }
