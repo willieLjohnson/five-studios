@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <div class="grid-container">
-    <div class="header">
-      <div class="navbar">
-        <div class="logo">
-          <h1>FIVE STUDIOS</h1>
+  <body>
+    <div class="grid-container">
+      <nav class="header">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">FIVE STUDIOS</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" id="nav-link">Home</a></li>
+            <li><a href="products.html" id="nav-link">Products</a></li>
+            <li><a href="blog.html" id="nav-link">Blog</a></li>
+            <li><a href="about.html" id="nav-link">About</a></li>
+            <li><a href="contact.html" id="nav-link">Contact</a></li>
+          </ul>
         </div>
+      </nav>
+      <div class="middle">
+        <section class="products">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/apple.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV X200 PRO</h5>
+              <h6>$1999.99</h6>
+              <div>
+                <a
+                  href="about.html"
+                  class="btn custom-btn bg-color"
+                  id="buy-btn"
+                  >BUY</a
+                >
+                <a
+                  href="about.html"
+                  class="btn custom-btn bg-color"
+                  id="cart-btn"
+                  >Add to Cart</a
+                >
+              </div>
+              <br />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/headphones.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV X200</h5>
+              <h6>$999.99</h6>
+            </div>
+          </div>
 
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/pods.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV X200B</h5>
+              <h6>$89.99</h6>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/iphone.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV 200</h5>
+              <h6>$69.99</h6>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/controller.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV 100</h5>
+              <h6>$49.99</h6>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/pods.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV 100B</h5>
+              <h6>$29.99</h6>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/wotch.jpeg" />
+            </div>
+            <div class="product-info">
+              <h5>FV OG</h5>
+              <h6>$9999.99</h6>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <h4>Designed by Willie</h4>
+        <p>Willie &copy; 2021</p>
       </div>
     </div>
-
-    <div class="middle">
-      <section class="products">
-      
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/apple.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV X200 PRO</h5>
-            <h6>$1999.99</h6>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/headphones.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV X200</h5>
-            <h6>$999.99</h6>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/pods.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV X200B</h5>
-            <h6>$89.99</h6>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/iphone.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV 200</h5>
-            <h6>$69.99</h6>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/controller.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV 100</h5>
-            <h6>$49.99</h6>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/pods.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV 100B</h5>
-            <h6>$29.99</h6>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-image">
-            <img src="images/wotch.jpeg">
-          </div>
-          <div class="product-info">
-            <h5>FV OG</h5>
-            <h6>$9999.99</h6>
-          </div>
-        </div>
-
-      </section>
-    </div>
-    <div class="footer">
-      <h4>Designed by Willie</h4>
-      <p>Willie &copy; 2021</p>
-    </div>
-  </div>
-</body>
-
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
 </html>

@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <div class="grid-container">
-    <div class="header">
-      <div class="navbar">
-        <div class="logo">
-          <h1>FIVE STUDIOS</h1>
+  <body>
+    <div class="grid-container">
+      <nav class="header">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">FIVE STUDIOS</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html" id="nav-link">Home</a></li>
+            <li><a href="products.html" id="nav-link">Products</a></li>
+            <li><a href="blog.html" id="nav-link">Blog</a></li>
+            <li><a href="about.html" id="nav-link">About</a></li>
+            <li><a href="contact.html" id="nav-link">Contact</a></li>
+          </ul>
         </div>
+      </nav>
 
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <div class="middle">
+        <section class="contact">
+          <div class="container">
+            <h2>Ask us anything. Your future awaits.</h2>
+
+            <form
+              action="index.html"
+              method="post"
+              class="contact-form"
+              role="form"
+            >
+              <input
+                type="text"
+                class="form-control"
+                name="cf-name"
+                placeholder="Name"
+              />
+
+              <input
+                type="email"
+                class="form-control"
+                name="cf-email"
+                placeholder="Email"
+              />
+
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                name="cf-message"
+                placeholder="Message"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="form-control"
+                id="submit-button"
+                name="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <h4>Designed by Willie</h4>
+        <p>Willie &copy; 2021</p>
       </div>
     </div>
-
-    <div class="middle">
-          <section class="contact">
-            <div class="container">
-              <h2>Ask us anything. Your future awaits.</h2>
-      
-              <form action="index.html" method="post" class="contact-form" role="form">
-                <input type="text" class="form-control" name="cf-name" placeholder="Name">
-      
-                <input type="email" class="form-control" name="cf-email" placeholder="Email">
-      
-                <textarea class="form-control" id="message" rows="5" name="cf-message" placeholder="Message"></textarea>
-      
-                <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
-              </form>
-            </div>
-          </section>
-    </div>
-    <div class="footer">
-      <h4>Designed by Willie</h4>
-      <p>Willie &copy; 2021</p>
-    </div>
-  </div>
-</body>
-
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
 </html>
