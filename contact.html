@@ -7,6 +7,11 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
@@ -39,53 +44,77 @@
 
       <div class="middle">
         <section class="contact">
+          <h2>We would love to hear from you!</h2>
+
           <div class="container">
-            <h2>Ask us anything. Your future awaits.</h2>
-
-            <form
-              action="index.html"
-              method="post"
-              class="contact-form"
-              role="form"
-            >
-              <input
-                type="text"
-                class="form-control"
-                name="cf-name"
-                placeholder="Name"
-              />
-
-              <input
-                type="email"
-                class="form-control"
-                name="cf-email"
-                placeholder="Email"
-              />
-
-              <textarea
-                class="form-control"
-                id="message"
-                rows="5"
-                name="cf-message"
-                placeholder="Message"
-              ></textarea>
-
-              <button
-                type="submit"
-                class="form-control"
-                id="submit-button"
-                name="submit"
+            <div class="container">
+              <form
+                action="index.html"
+                method="post"
+                class="contact-form"
+                role="form"
               >
-                Send Message
-              </button>
-            </form>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  name="cf-name"
+                  placeholder="Name"
+                />
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  name="cf-email"
+                  placeholder="Email"
+                />
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  name="cf-message"
+                  placeholder="Message"
+                ></textarea>
+
+                <button
+                  type="submit"
+                  class="form-control"
+                  id="submit-button"
+                  name="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24802.316649548422!2d-77.03535402132285!3d39.008707241418314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cf4e666ae927%3A0x8433a865b29adf!2sSilver%20Spring%2C%20MD!5e0!3m2!1sen!2sus!4v1627438021282!5m2!1sen!2sus"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
           </div>
         </section>
       </div>
-      <div class="footer">
-        <h4>Designed by Willie</h4>
-        <p>Willie &copy; 2021</p>
-      </div>
+      <footer class="page-footer">
+        <div>© 2021 Willie Johnson</div>
+
+        <div class="footer-contacts">
+          <div>
+            <a href="#" class="fa fa-facebook"></a>
+          </div>
+          <div>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+          <div>
+            <a href="tel:2409078829" class="fa fa-phone"></a>
+          </div>
+          <div>
+            <a href="mailto: liwa.johnson@gmail.com" class="fa fa-envelope"></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
