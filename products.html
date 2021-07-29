@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -22,6 +24,11 @@
       media="screen,projection"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      $(document).ready(function () {
+        $('.sidenav').sidenav();
+      });
+    </script>
   </head>
 
   <body>
@@ -41,6 +48,18 @@
           </ul>
         </div>
       </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <a href="index.html" class="brand-logo">FIVE STUDIOS</a>
+        <br />
+        <br />
+        <li><a href="index.html" id="nav-link">Home</a></li>
+        <li><a href="products.html" id="nav-link">Products</a></li>
+        <li><a href="blog.html" id="nav-link">Blog</a></li>
+        <li><a href="about.html" id="nav-link">About</a></li>
+        <li><a href="contact.html" id="nav-link">Contact</a></li>
+      </ul>
+
       <div class="middle">
         <section class="products">
           <div class="product-card">
