@@ -69,7 +69,9 @@
               <h5>FV X200 PRO</h5>
               <h6>$1999.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
               <br />
             </div>
@@ -82,7 +84,9 @@
               <h5>FV X200</h5>
               <h6>$999.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -95,7 +99,9 @@
               <h5>FV X200B</h5>
               <h6>$89.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -107,7 +113,9 @@
               <h5>FV 200</h5>
               <h6>$69.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -119,7 +127,9 @@
               <h5>FV 100</h5>
               <h6>$49.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -131,7 +141,9 @@
               <h5>FV 100B</h5>
               <h6>$29.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -143,7 +155,9 @@
               <h5>FV OG</h5>
               <h6>$9999.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
@@ -155,14 +169,16 @@
               <h5>OG</h5>
               <h6>$99999.99</h6>
               <div>
-                <a href="#" class="btn-large" id="product-btn">BUY</a>
+                <a onclick="purchase(this)" class="btn-large" id="product-btn"
+                  >ADD TO CART</a
+                >
               </div>
             </div>
           </div>
         </section>
       </div>
       <footer class="page-footer">
-        <div>© 2021 Willie Johnson</div>
+        <div>&copy; 2021 Willie Johnson</div>
 
         <div class="footer-contacts">
           <div>
@@ -181,5 +197,10 @@
       </footer>
     </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      function purchase(item) {
+        item.innerHTML = 'IN CART';
+      }
+    </script>
   </body>
 </html>

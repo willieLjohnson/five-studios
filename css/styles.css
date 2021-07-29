@@ -100,13 +100,26 @@ main {
 }
 
 .hero-contacts a {
+  border-radius: 5px;
   color: var(--yellow);
   padding: 10px 40px 10px 40px;
-  transition: transform 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 
 .hero-contacts a:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+@keyframes quick-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(var(--yellow-rgb), 0.7);
+  }
+
+  100% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 15px rgba(var(--yellow-rgb), 0);
+  }
 }
 
 .action-call {
@@ -120,7 +133,7 @@ main {
   transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out;
   box-shadow: 0 0 0 0 rgba(var(--yellow-rgb), 1);
   transform: scale(1);
-  animation: pulse 2s infinite;
+  animation: pulse 2s both infinite;
 }
 
 @keyframes pulse {
@@ -281,16 +294,18 @@ footer {
 
 footer a {
   color: var(--yellow) !important;
-  padding: 5px 10px 5px 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 .footer-copyright {
+  margin: auto;
 }
 
 .page-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -448,7 +463,7 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 70%;
+  height: 80%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -457,6 +472,7 @@ footer a {
 .contact .container {
   display: flex;
   flex-direction: row;
+  overflow: visible;
 }
 
 .contact iframe {
@@ -490,7 +506,6 @@ footer a {
   border-style: solid;
   color: var(--white-color);
   background-color: var(--form-control-background);
-  min-height: 40px;
 }
 
 .form-control::placeholder {
@@ -507,6 +522,7 @@ footer a {
   border-style: solid;
   border-color: var(--blue-2);
   border-width: 1px;
+  min-height: 20px;
 }
 
 .form-control#message {
@@ -517,26 +533,19 @@ footer a {
   height: 300px;
 }
 button#submit-button {
-  background: var(--yellow);
-  border-radius: 5px;
-  padding: 7px 12px;
-
-  text-decoration: none;
+  margin-top: 10px;
+  background-color: var(--yellow);
   color: var(--blue-5);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-bold);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-  transition: color 0.25s ease-in-out, font-size 0.25s ease-in-out;
-  border-color: transparent;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out,
+    font-size 0.25s ease-in-out;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 button#submit-button:hover {
-  background: var(--blue-5);
-  border-color: transparent;
+  background-color: var(--blue-5);
   color: var(--yellow);
+  animation: pulse 2s infinite;
 }
 
 /* BLOG */
