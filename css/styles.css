@@ -325,10 +325,15 @@ footer a {
   transform: scale(1);
 }
 
+.product-card .opened {
+  width: 900px !important;
+  height: 900px !important;
+  z-index: 10;
+}
+
 .product-card:hover {
   border: 3px solid rgba(var(--yellow-rgb), 0.8);
-  transform: scale(1.1);
-  animation: small-pulse 2s infinite;
+  animation: shadow-pulse 2s infinite;
 }
 
 .product-card:hover > .product-info > div > #product-btn {
@@ -393,7 +398,7 @@ footer a {
 
 /* ABOUT */
 .about {
-  padding: 20px;
+  padding: 15px;
 }
 .about .container {
   width: 50%;
@@ -433,9 +438,17 @@ footer a {
 /* Contact form */
 
 .contact {
+  background-color: var(--form-control-background);
   display: flex;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: var(--blue-3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
@@ -598,6 +611,7 @@ button#submit-button:hover {
 
 .blog-card-content#details {
   display: none;
+  padding: 0px 10% 0px 10%;
 }
 
 .show-details {
