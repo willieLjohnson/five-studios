@@ -348,11 +348,11 @@ footer a {
 
 .product-card:hover {
   border: 3px solid rgba(var(--yellow-rgb), 0.8);
-  animation: shadow-pulse 2s infinite;
+  animation: shadow-pulse 2s both infinite;
 }
 
 .product-card:hover > .product-info > div > #product-btn {
-  animation: pulse 2s infinite;
+  animation: pulse 2s both infinite;
 }
 
 @keyframes small-pulse {
@@ -480,8 +480,8 @@ footer a {
   border-style: none;
   min-height: 300px;
   width: 50%;
-  height: 85%;
-  align-self: center;
+  height: 100%;
+  padding-bottom: 10px;
   filter: sepia(80%) contrast(90%) invert();
 }
 
@@ -545,7 +545,7 @@ button#submit-button {
 button#submit-button:hover {
   background-color: var(--blue-5);
   color: var(--yellow);
-  animation: pulse 2s infinite;
+  animation: pulse 2s both infinite;
 }
 
 /* BLOG */
@@ -582,7 +582,7 @@ button#submit-button:hover {
   transition: transform 0.25s ease-out;
 }
 .blog-card:hover {
-  animation: shadow-pulse 2s infinite;
+  animation: shadow-pulse 2s both infinite;
 }
 
 .blog-card-content {
@@ -592,7 +592,7 @@ button#submit-button:hover {
 
 .opened {
   border: 3px solid rgba(var(--yellow-rgb), 0.8);
-  animation: shadow-pulse 2s infinite;
+  animation: shadow-pulse 2s both infinite;
   position: fixed;
   width: 95vw;
   height: 95vh;
