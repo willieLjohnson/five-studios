@@ -32,6 +32,7 @@
       media="screen,projection"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/scripts.js"></script>
     <script>
       $(document).ready(function () {
         $('.sidenav').sidenav();
@@ -213,43 +214,5 @@
       </footer>
     </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      var shoppingCartCount = document.getElementById('cart-count');
-      var cartItems = [];
-
-      function updateCartCount() {
-        shoppingCartCount.innerHTML = cartItems.length;
-      }
-
-      function clearCart() {
-        cartItems.forEach((item) => {
-          item[0].classList.remove('in-cart');
-          item[0].classList.remove('selected');
-          item[1].innerHTML = 'ADD TO CART';
-        });
-        cartItems = [];
-        updateCartCount();
-      }
-
-      function purchase(item) {
-        item.innerHTML = 'IN CART';
-        let productCard = item.parentNode.parentNode.parentNode;
-        if (!productCard.classList.contains('in-cart')) {
-          productCard.classList.add('in-cart');
-          cartItems.push([productCard, item]);
-          updateCartCount();
-        }
-      }
-      function selectProduct(product) {
-        if (
-          product.classList.contains('selected') &&
-          !product.classList.contains('in-cart')
-        ) {
-          product.classList.remove('selected');
-        } else {
-          product.classList.add('selected');
-        }
-      }
-    </script>
   </body>
 </html>

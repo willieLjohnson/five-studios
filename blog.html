@@ -37,6 +37,7 @@
         $('.sidenav').sidenav();
       });
     </script>
+    <script src="js/scripts.js"></script>
   </head>
 
   <body>
@@ -456,23 +457,5 @@
       </footer>
     </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      function onBlogClick(blog) {
-        var blogDetails;
-        blog.childNodes.forEach((child) => {
-          if (child.id == 'details') {
-            blogDetails = child;
-          }
-        });
-        if (blog.classList.contains('opened')) {
-          blog.classList.remove('opened');
-          blogDetails.classList.remove('show-details');
-        } else {
-          blog.classList.add('opened');
-          blogDetails.classList.add('show-details');
-        }
-        console.log(blogDetails);
-      }
-    </script>
   </body>
 </html>

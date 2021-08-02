@@ -1,28 +1,65 @@
-// create a new div element
-const newDiv = document.createElement('div');
-newDiv.id = 'hover-div';
+// PRODUCT SECTION
 
-newDiv.style.position = 'absolute';
-newDiv.style.backgroundColor = 'var(--blue-4)';
-newDiv.style.fontSize = '2em';
-newDiv.style.padding = '0.1em';
-newDiv.style.display = 'none';
 
-// and give it some content
-const newContent = document.createTextNode('OPEN');
+let shoppingCartCount;
+let cartItems = [];
 
-// add the text node to the newly created div
-newDiv.appendChild(newContent);
+window.addEventListener('load', function () {
+  shoppingCartCount = document.getElementById('cart-count');
+  updateCartCount();
+})
 
-document.body.appendChild(newDiv);
+function updateCartCount() {
+  shoppingCartCount.innerHTML = cartItems.length;
+}
 
-const onMouseMove = (e) => {
-  newDiv.style.left = e.pageX + 'px';
-  newDiv.style.top = e.pageY + 'px';
-  if (e.target.id == 'clickable-blog-card') {
-    newDiv.style.display = 'block';
-  } else {
-    newDiv.style.display = 'none';
+function clearCart() {
+  cartItems.forEach((item) => {
+    item[0].classList.remove('in-cart');
+    item[0].classList.remove('selected');
+    item[1].innerHTML = 'ADD TO CART';
+  });
+  cartItems = [];
+  updateCartCount();
+}
+
+function purchase(item) {
+  item.innerHTML = 'IN CART';
+  let productCard = item.parentNode.parentNode.parentNode;
+  if (!productCard.classList.contains('in-cart')) {
+    productCard.classList.add('in-cart');
+    cartItems.push([productCard, item]);
+    updateCartCount();
   }
-};
-document.addEventListener('mousemove', onMouseMove);
+}
+
+function selectProduct(product) {
+  if (
+    product.classList.contains('selected') &&
+    !product.classList.contains('in-cart')
+  ) {
+    product.classList.remove('selected');
+  } else {
+    product.classList.add('selected');
+  }
+}
+
+// BLOG SECTION
+
+function onBlogClick(blog) {
+  var blogDetails;
+  blog.childNodes.forEach((child) => {
+    if (child.id == 'details') {
+      blogDetails = child;
+    }
+  });
+  
+  if (blog.classList.contains('opened')) {
+    blog.classList.remove('opened');
+    blogDetails.classList.remove('show-details');
+  } else {
+    blog.classList.add('opened');
+    blogDetails.classList.add('show-details');
+  }
+  console.log(blogDetails);
+}

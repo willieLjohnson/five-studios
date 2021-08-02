@@ -68,6 +68,7 @@ main {
   z-index: -5;
   filter: brightness(80%);
   opacity: 0.6;
+  top: -100px;
 }
 
 .hero-text {
@@ -548,6 +549,13 @@ footer a {
   border-width: 1px;
   height: 300px;
 }
+
+.form-control#name:not(:placeholder-shown),
+.form-control#email:not(:placeholder-shown),
+.form-control#message:not(:placeholder-shown) {
+  background-color: var(--blue-3);
+}
+
 button#submit-button {
   margin-top: 10px;
   background-color: var(--yellow);
@@ -648,11 +656,12 @@ button#submit-button:hover {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .contact h2 {
     font-size: 25px;
     padding: 10px;
   }
+
   .contact {
     margin-top: 60px;
     width: 95%;
@@ -687,8 +696,11 @@ button#submit-button:hover {
 
   .hero img {
     width: 200%;
-    bottom: 10%;
+    position: fixed;
+
+    transform: translate(-50%, 10%);
   }
+
   .hero-contacts {
     width: 80%;
   }
